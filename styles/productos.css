@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+h2{font-size: 2.5em;}
+h3{font-size: 1.8em;}
+p{font-size: 1.25em;}
+
+img{
+    border-radius: 5%;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,2);
+    box-shadow: 2px 2px 10px rgb(0,0,0,2);
+    color: white;
+    background-color:rgb(44, 163, 44);
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(7, 122, 7) ;
+}
+.container{
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+header{
+    background-color:rgb(44, 163, 44);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight:800;
+    color: rgb(3, 65, 16);
+    font-size: 1.45em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(255, 249, 249);
+}
+header a:hover{
+    color: rgb(3, 2, 2);
+}
+
+
+#titulo-productos{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: start;
+    height: 30vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("../media/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top top;
+}
+#titulo-productos .list{
+    margin-left: 30px;
+}
+#titulo-productos h2{
+    color: white;
+}
+#titulo-productos a{
+    display: inline-block;
+    padding: 20px 12px;
+    color:rgb(255, 249, 249);
+    text-decoration: none;
+}
+#titulo-productos a:hover{
+    color:rgb(44, 163, 44);
+}
+
+
+#verduras{
+    background-color:rgba(3, 2, 2, 0.918);
+    color: white;
+    text-align: center;
+}
+#verduras .container{
+    padding: 100px 12px;
+
+}
+#verduras h2{
+    font-size: 2.8em;
+    margin-bottom:  80px;
+    margin-top: 0;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+}
+.verduras-list h3,p{
+    margin: 10px;
+}
+.verduras-list button{
+    margin: 20px 20px 50px 20px; 
+} 
+#verduras .verduras-list{
+    padding: 50px 60px 0px 60px;
+    background-color:rgb(13, 112, 35);
+    margin-bottom: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.575);
+    border-radius: 5%;
+}
+
+
+#frutas{
+    background-color:rgba(3, 2, 2, 0.87);
+    color: white;
+    text-align: center;
+}
+#frutas .container{
+    padding: 100px 12px;
+
+}
+#frutas h2{
+    font-size: 2.8em;
+    margin-bottom:  80px;
+    margin-top: 0;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+}
+.frutas-list h3,p{
+    margin: 10px;
+}
+.frutas-list button{
+    margin: 20px 20px 50px 20px; 
+} 
+#frutas .frutas-list{
+    padding: 50px 60px 0px 60px;
+    background-color:rgb(13, 112, 35);
+    margin-bottom: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.575);
+    border-radius: 5%;
+}
+
+
+footer{
+    background-color: rgb(44, 163, 44);
+}
+footer p{
+    font-size: 1em;
+    margin: 0;
+    color:rgb(173, 173, 173);
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+/*END MOBILE PHONE*/
+
+/*DESIGN RESPONSIVE*/
+
+/*DESKTOP*/
+@media (min-width:990px) {
+    
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(32, 131, 32);
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+
+    #titulo-productos{
+        justify-content:flex-start ;
+        padding: 20vh;
+    }
+    #titulo-productos h2{
+        font-size: 4em;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+    #titulo-productos a{
+        margin-top:-20px;
+        font-size: 1.25em;
+    }
+
+
+    #verduras h2{
+        font-size: 3.25em;
+    }   
+    #verduras .verduras-list{
+        display: inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+
+
+    #frutas h2{
+        font-size: 3.25em;
+    }   
+    #frutas .frutas-list{
+        display: inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+
+
+    footer .container{
+        justify-content: center;
+    }
+
+}
+/*END DESKTOP*/
+
+/*TABLET*/
+@media screen and (min-width:768px) and (max-width:990px){
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(32, 131, 32);
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+
+    #titulo-productos{
+        justify-content:flex-start ;
+        padding: 20vh;
+    }
+    #titulo-productos .list{
+        margin: 0;
+    }
+    #titulo-productos h2{
+        font-size: 3.5em;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+    #titulo-productos a{
+        margin-top:-20px;
+        font-size: 1.25em;
+    }
+
+
+    #verduras h2{
+        font-size: 3em;
+    }   
+    #verduras .verduras-list{
+        display:inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+
+
+    #frutas h2{
+        font-size: 3em;
+    }   
+    #frutas .frutas-list{
+        display:inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+}    
+/*END TABLET*/

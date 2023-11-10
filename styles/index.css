@@ -1,0 +1,417 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+h1{font-size: 3.0em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.8em;}
+p{font-size: 1.25em;}
+
+img{
+    border-radius: 5%;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,2);
+    box-shadow: 2px 2px 10px rgb(0,0,0,2);
+    color: white;
+    background-color:rgb(44, 163, 44);
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(7, 122, 7) ;
+}
+
+.container{
+    max-width: 1050px;
+    margin: auto;
+}
+
+header{
+    background-color:rgb(44, 163, 44);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight:800;
+    color: rgb(3, 65, 16);
+    font-size: 1.45em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(255, 249, 249);
+}
+header a:hover{
+    color: rgb(3, 2, 2);
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("../media/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#titulo h1{
+    color: white;
+}   
+#titulo button{
+    margin-bottom: 150px;
+}
+
+#quienesSomos{
+    background-color:rgb(44, 163, 44);
+}
+#quienesSomos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+#quienesSomos h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:oblique;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    color: rgb(255, 249, 249);
+}
+
+#ofertas{
+    background-color:rgb(3, 2, 2);
+    color: white;
+    text-align: center;
+}
+#ofertas .container{
+    padding: 100px 12px;
+
+}
+#ofertas h2{
+    font-size: 2.8em;
+    margin-bottom:  80px;
+    margin-top: 0;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+}
+.alimentos h3,p{
+    margin: 10px;
+}
+.alimentos button{
+    margin: 20px 20px 50px 20px; 
+} 
+#ofertas .alimentos{
+    padding: 50px 60px 0px 60px;
+    background-color:rgb(13, 112, 35);
+    margin-bottom: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.575);
+    border-radius: 5%;
+}
+
+#envios{
+    background-color:rgb(44, 163, 44);
+}
+#envios .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+#envios h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:oblique;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    font-size: 2.3em;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: rgb(255, 249, 249);
+}
+#envios .ubicaciones{
+    display: grid;
+    grid-template-columns:repeat(2,150px);
+    grid-template-rows: repeat(3,70px);
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+}    
+
+#envios .envios-precio{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:oblique;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    margin-top: 50px;
+    color: rgb(255, 249, 249);
+}
+
+
+#registro{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("../media/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#registro h3{
+    color: rgb(255, 249, 249);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:oblique;
+}
+#registro p{
+    color: rgb(255, 249, 249);
+    font-size: 1em;
+}
+#registro button{
+    margin-top: 20px;
+}
+
+
+footer{
+    background-color: rgb(44, 163, 44);
+}
+footer p{
+    margin: 0;
+    color:rgb(173, 173, 173);
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* END MOBILE PHONE*/
+
+/*DESIGN RESPONSIVE*/
+
+/*DESKTOP*/
+
+@media (min-width:990px) {
+    
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(32, 131, 32);
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+
+
+    #titulo h1{
+        font-size: 4em;
+    }
+
+
+
+    #quienesSomos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quienesSomos .quienesSomos-mediaquery{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienesSomos h2{
+        margin-top: 0;
+    }
+    #quienesSomos .img-quienesSomos{
+        background-image:url("../media/quienesSomos.jpg");
+        background-size: cover;
+        background-position: left;
+        height: 500px;
+        width: 440px;
+    }
+
+
+
+    #ofertas h2{
+        font-size: 3.25em;
+    }   
+    #ofertas .alimentos{
+        display: inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+
+
+
+    #envios .container{
+        padding: 50px;
+    }
+    #envios .ubicaciones{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,100px);
+    }
+    #envios h2{
+        font-size: 3.25em;
+    }
+    #envios p{
+        font-size: 1.7em;
+    }
+    #envios h3{
+        font-size: 2.25em;
+        margin-bottom: 40px;
+    }
+
+
+
+    #registro h3{
+        font-size:5vh;
+    }
+    #registro p{
+        font-size: 1.5em;
+    }
+
+
+
+    footer .container{
+        justify-content: center;
+    }
+}
+/*END DESKTOP*/
+
+/*TABLET*/
+@media screen and (min-width:768px) and (max-width:990px){
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(32, 131, 32);
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+
+
+    #quienesSomos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quienesSomos .quienesSomos-mediaquery{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienesSomos h2{
+        margin-top: 0;
+    }
+    #quienesSomos .img-quienesSomos{
+        background-image:url("../media/quienesSomos.jpg");
+        background-size: cover;
+        background-position: left;
+        height: 500px;
+        width: 350px;
+    }
+    
+
+
+    #ofertas h2{
+        font-size: 3em;
+    }   
+    #ofertas .alimentos{
+        display:inline-block;
+        margin-right: 30px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.664);
+        border-radius: 5%;
+    }
+
+
+
+    #envios .container{
+        padding: 50px;
+    }
+    #envios .ubicaciones{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,100px);
+    }
+    #envios .envios-precio{
+        margin: 0;
+    }
+    #envios h2{
+        font-size: 2.5em; 
+        margin-top:10px ;       
+    }
+    #envios p{
+        font-size: 1.5em;
+    }
+    #envios h3{
+        font-size: 2em;
+        margin: 0;
+    }
+
+
+
+    #registro h3{
+        font-size:1.5em;
+    }
+    #registro p{
+        font-size: 1em;
+    }
+}
+/*END TABLET*/
